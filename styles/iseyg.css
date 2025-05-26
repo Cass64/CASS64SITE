@@ -1,0 +1,139 @@
+/* ------------------------------ */
+/* STYLE PRINCIPAL POUR ISEYG     */
+/* ------------------------------ */
+
+/* Reset de base pour avoir une base propre */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page : fond clair très doux, texte sombre */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f9; /* très clair */
+  color: #222; /* texte très sombre */
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Barre de navigation : fond blanc avec ombre discrète */
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* espace entre titre et menu */
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #fffdfd; /* ou la couleur que tu veux */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #111827;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+/* Menu à droite */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #0078d4; /* couleur au survol */
+}
+
+/* Section principale de présentation */
+.presentation {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Conteneur image */
+.image-banner {
+  flex: 1;
+  max-width: 350px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Image de profil : prend tout l’espace disponible */
+.image-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Conteneur texte */
+.texte {
+  flex: 2;
+}
+
+/* Titre principal */
+.texte h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+/* Paragraphes avec un peu d’espace en bas */
+.texte p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+/* Emphase sur certains mots */
+.texte strong {
+  color: #0078d4;
+}
+
+/* Bouton Discord - stylisé pour être visible et moderne */
+.btn-discord {
+  display: inline-block;
+  background-color: #5865F2; /* Couleur officielle Discord */
+  color: #fff;
+  padding: 0.75rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(88,101,242,0.4);
+}
+
+/* Effet au survol du bouton */
+.btn-discord:hover {
+  background-color: #4752c4;
+  box-shadow: 0 6px 15px rgba(71,82,196,0.7);
+  cursor: pointer;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: #111827;
+  color: white;
+  font-size: 0.9em;
+}

@@ -1,0 +1,71 @@
+/* ------------------------------ */
+/* MEDIA QUERIES POUR ISEYG       */
+/* ------------------------------ */
+
+/* Pour écrans de 768px ou moins (tablettes, petits écrans) */
+@media (max-width: 768px) {
+  /* On réduit les paddings de la navbar pour plus de place */
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  /* La liste de navigation passe en colonne verticale */
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Section présentation : on passe en colonne verticale */
+  .presentation {
+    flex-direction: column;
+    margin: 2rem 1rem;
+    padding: 0 1rem;
+  }
+
+  /* L’image prend toute la largeur disponible */
+  .image-banner {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+  }
+
+  /* Texte prend toute la largeur */
+  .texte {
+    flex: unset;
+  }
+
+  /* Le titre devient un peu plus petit */
+  .texte h1 {
+    font-size: 2rem;
+  }
+
+  /* Le bouton Discord prend toute la largeur possible */
+  .btn-discord {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Pour écrans très petits (smartphones) */
+@media (max-width: 480px) {
+  /* On réduit encore la taille du titre */
+  .texte h1 {
+    font-size: 1.7rem;
+  }
+
+  /* Le texte des paragraphes un peu plus petit */
+  .texte p {
+    font-size: 1rem;
+  }
+
+  /* On garde la nav simple avec un padding plus petit */
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  /* Navigation en colonne, mais plus serrée */
+  .navbar ul {
+    gap: 0.8rem;
+  }
+}

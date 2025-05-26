@@ -1,0 +1,111 @@
+/* -------------------------
+   Fichier : cass64.css
+   Style principal pour la page de présentation de Cass64
+   ------------------------- */
+
+/* Police et base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #afa1a1d8;
+  color: #06064b;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* espace entre titre et menu */
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #fffdfd; /* ou la couleur que tu veux */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #111827;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+/* Menu à droite */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #0078d4; /* couleur au survol */
+}
+
+
+/* Présentation */
+.presentation {
+  display: flex;
+  max-width: 1100px;
+  margin: 3em auto;
+  padding: 2em;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+
+/* Image de profil */
+.photo-profil img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Contenu texte */
+.contenu {
+  margin-left: 2em;
+  flex: 1;
+}
+
+.contenu h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #111827;
+}
+
+.contenu p {
+  line-height: 1.7em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.btn-discord {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  background-color: #5865f2;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-discord:hover {
+  background-color: #4752c4;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: #111827;
+  color: white;
+  font-size: 0.9em;
+}

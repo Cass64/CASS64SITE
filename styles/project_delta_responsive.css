@@ -1,0 +1,92 @@
+/* === Media Queries pour Project Delta === */
+
+/* Sur petits écrans (tablettes, petits laptops) */
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .navbar ul {
+    gap: 1.2rem;
+  }
+
+  .navbar ul li a {
+    font-size: 0.9rem;
+  }
+
+  main {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .embed {
+    padding: 1.5rem 2rem;
+  }
+
+  .embed h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-discord {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* Sur très petits écrans (mobiles) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar ul {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .navbar ul li a {
+    font-size: 0.85rem;
+  }
+
+  main {
+    max-width: 95%;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-image {
+    border-radius: 8px;
+    box-shadow: 0 0 15px #00bfff88;
+  }
+
+  .embed {
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .embed h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn-discord {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
