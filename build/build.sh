@@ -7,7 +7,7 @@ mkdir -p build
 cp -R pages/* build/
 
 # Copier les images
-cp -R images build/
+cp -R images/* build/
 
 # Copier les styles
-cp -R styles build/
+cp -R styles/* build/
